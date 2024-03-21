@@ -1,0 +1,58 @@
+body{
+  background-color: rgb(144, 185, 185);  
+}
+.sidebar {
+    background-color: rgb(232, 232, 232);
+    height: 580px;
+    width: 24%; 
+    overflow: auto;
+}
+
+
+.smalldiv {
+    margin: 5px;
+    padding: 13px;
+    background-color: grey;
+    font-size: small;
+    height: 170px;
+    border-radius: 15px;
+  }
+
+.maindiv{
+  display: flex;
+  height: 650px;
+  justify-content: space-between;
+ 
+  
+}
+.BOX{
+  margin: 5px;
+  width: 31%;
+  border: solid 2px black;
+  overflow: auto;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.smalldiv:hover{
+  background-color: rgb(75, 69, 69);
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+
+  .maindiv{
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .BOX{
+    width: 90%;
+    margin: auto;
+  }
+}
