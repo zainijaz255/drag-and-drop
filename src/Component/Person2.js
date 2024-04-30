@@ -12,7 +12,7 @@ const Person2 =({value ,boxData2}) => {
           ref={provided.innerRef}
           {...provided.droppableProps}
         >
-          <h1 style={{ textAlign: "center" }}>Box 1</h1>
+          <h1 style={{ textAlign: "center" }}>Box 2</h1>
           {value.map((val, index) => (
             <Draggable key={val.ticketId} draggableId={val.ticketId.toString()} index={index}>
               {(provided) => (
